@@ -31,6 +31,15 @@ define(['intern/dojo/text!lib/common/resolver/paths.json', 'test/mocks/lazo', 'i
         paths.common[k] = paths[env][k];
     }
 
+        //paths.common['sinon'] = 'node_modules/sinon/lib/sinon';
+        //paths.common['sinon-chai'] = 'node_modules/sinon-chai/lib/sinon-chai';
+        //paths.common['sinon-event'] = 'node_modules/sinon/lib/sinon/util/event';
+        //paths.common['sinon-xhr'] = 'node_modules/sinon/lib/sinon/util/fake_xml_http_request';
+        //
+        //// conf.requirejs.client.shim['sinon-chai'] = { deps: ['sinon'] };
+        //conf.requirejs.client.shim['sinon-event'] = { deps: ['sinon'] };
+        //conf.requirejs.client.shim['sinon-xhr'] = { deps: ['sinon-event'] };
+
     return {
 
         environments: [
@@ -57,6 +66,8 @@ define(['intern/dojo/text!lib/common/resolver/paths.json', 'test/mocks/lazo', 'i
                     // testing libs
                     sinon: '../../node_modules/sinon/lib/sinon.js',
                     'sinon-chai': '../../node_modules/sinon-chai/lib/sinon-chai.js',
+                    //'sinon-event': '../../node_modules/sinon/lib/sinon/util/event.js',
+                    //'sinon-xhr': '../../node_modules/sinon/lib/sinon/util/fake_xml_http_request.js',
                     'bundler': 'lazoBundle'
                 }
             }
