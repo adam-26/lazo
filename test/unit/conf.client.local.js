@@ -64,8 +64,8 @@ define(['intern/dojo/text!lib/common/resolver/paths.json', 'test/mocks/lazo', 'i
                 },
                 '*': {
                     // testing libs
-                    sinon: '../../node_modules/sinon/lib/sinon.js',
-                    'sinon-chai': '../../node_modules/sinon-chai/lib/sinon-chai.js',
+                    sinon: 'node_modules/sinon/lib/sinon',
+                    'sinon-chai': 'node_modules/sinon-chai/lib/sinon-chai',
                     //'sinon-event': '../../node_modules/sinon/lib/sinon/util/event.js',
                     //'sinon-xhr': '../../node_modules/sinon/lib/sinon/util/fake_xml_http_request.js',
                     'bundler': 'lazoBundle'
